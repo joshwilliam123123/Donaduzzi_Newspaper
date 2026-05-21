@@ -1,0 +1,38 @@
+.innerContent {
+    background-color: var(--bg-ter-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+.contents {
+    justify-content: center;
+    align-items: center;
+}
+.field {
+    width: 70%;
+}
+.msg {
+   font-size: 4rem;
+   margin: 0px;
+}
+.textDescription {
+    font-size: 1rem;
+}
+
+.separationSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5px;
+    background-color: var(--bg-sec-color);
+}
+.title {
+    display: flex;
+    margin: 0px;
+    font-size: small;
+}

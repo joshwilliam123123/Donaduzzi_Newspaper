@@ -1,0 +1,20 @@
+.innerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.contents {
+    padding: var(--global-padding-big);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.notFoundTitle {
+    margin: 0;
+}
+.notFoundText {
+    font-size: medium;
+}

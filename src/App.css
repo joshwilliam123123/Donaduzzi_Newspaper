@@ -1,0 +1,8 @@
+.mainpanel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.maincontainer {
+  background-color: var(--bg-color);
+}

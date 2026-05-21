@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap');
+
+:root {
+  --primary-color: #4a4ac4;
+  --secondary-color: #c4ac4a;
+  --bg-color: #d4d4ee;
+  --text-color: #5f5f79;
+  --bg-sec-color: #babad8;
+  --input-color: #757585;
+  --global-padding-small: 5vh;
+  --global-padding-medium: 10vh;
+  --global-padding-big: 20vh;
+  --global-fontsize-small: 1rem;
+  --global-fontsize-medium: 2rem;
+  --global-fontsize-big: 3rem;
+  --global-gap-small: 10px;
+  --global-gap-medium: 20px;
+  --global-gap-big: 30px;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Figtree", monospace;
+  font-weight: bold;
+  color: var(--text-color);
+  user-select: none;
+  font-size: var(--global-fontsize-big);
+}
+h2 {
+  font-family: "Figtree", monospace;
+  font-weight: lighter;
+  color: var(--text-color);
+  user-select: none;
+}
+h3 {
+  font-family: "Figtree", monospace;
+  font-weight: bold;
+  color: var(--text-color);
+  opacity: .7;
+  user-select: none;
+}
+input {
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: var(--bg-sec-color);
+  font-family: "Figtree", monospace;
+  border: 0;
+  margin: 10px;
+  text-align: center;
+}
+input::placeholder { color: var(--text-color); opacity: .4; }
