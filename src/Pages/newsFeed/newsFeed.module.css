@@ -1,0 +1,358 @@
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+svg {
+    fill: rgb(201, 199, 199);
+    position: relative;
+}
+
+.sidebar {
+    background-color: #1b2130;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 5;
+}
+
+.profilediv {
+    top: 0;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #262d3b;
+    border-radius: 0px 0px 0px 0px;
+    border: none;
+    transition: .7s;
+}
+
+.profileicon {
+    fill: white;
+    position: relative;
+    top: 0%;
+    left: 5%;
+}
+
+.profilename {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    top: 15%;
+    left: 10%;
+    font-family: Arial;
+}
+
+.buttonssidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background-color: #1b2130;
+}
+
+.Logosuperior {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+
+.emailsidebar {
+    position: relative;
+    font-size: 10px;
+    top: 40%;
+    left: -12%;
+    font-family: Arial;
+}
+
+.barradepesquisa {
+    position: relative;
+    width: 80%;
+    left: 7.3%;
+    height: 5%;
+    border-radius: 5px;
+    border: none;
+    background-color: #0f121b;
+}
+
+.homedojornal {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 6%;
+    margin-top: 10%;
+    margin-left: 7.3%;
+    background-color: #1b2130;
+    border: none;
+    fill: rgb(232, 232, 232);
+    transition: .5s;
+    border-radius: 2.4px;
+}
+
+.hometxtbutton {
+    position: relative;
+    left: 15%;
+    top: 10%;
+    color: rgb(201, 199, 199);
+}
+
+.homedojornal:hover {
+    transition: .7s;
+    background-color: #007aff;
+}
+
+.homedojornal:hover span {
+    transition: 0.7s;
+    color: white;
+}
+
+.svghome {
+    left: 10%;
+}
+
+.homedojornal:hover svg {
+    transition: 0.7s;
+    fill: white;
+}
+
+.Profilebutton {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: .5%;
+    height: 6%;
+    width: 80%;
+    left: 7.5%;
+    background-color: transparent;
+    border: none;
+    transition: .7s;
+    border-radius: 2.5px;
+    align-items: center;
+}
+
+.profileiconbutton {
+    position: relative;
+    left: 9%;
+    transition: .7s;
+}
+
+.profilebuttontxt {
+    position: relative;
+    left: 15%;
+    top: 10%;
+    color: rgb(201, 199, 199);
+    transition: .7s;
+}
+
+.Profilebutton:hover {
+    transition: .7s;
+    background-color: #007aff;
+}
+
+.Profilebutton:hover span {
+    transition: .7s;
+    color: white;
+}
+
+.profileiconbutton:hover svg {
+    transition: .7s;
+    fill: white;
+}
+
+.configbutton {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: .5%;
+    height: 6%;
+    width: 80%;
+    left: 7.5%;
+    background-color: transparent;
+    border: none;
+    transition: .7s;
+    border-radius: 2.5px;
+    align-items: center;
+}
+
+.configicon {
+    position: relative;
+    left: 10%;
+    transition: .7s;
+}
+
+.configtxt {
+    position: relative;
+    left: 15%;
+    top: 10%;
+    color: rgb(201, 199, 199);
+    transition: .7s;
+}
+
+.configbutton:hover {
+    transition: .7s;
+    background-color: #007aff;
+}
+
+.configbutton:hover span {
+    color: rgb(232, 232, 232);
+    transition: .7s;
+}
+
+.configbutton:hover svg {
+    fill: rgb(232, 232, 232);
+    transition: .7s;
+}
+
+.linhaconfig {
+    background-color: rgb(110, 109, 109);
+    position: relative;
+    border: none;
+    left: -1%;
+    top: .5%;
+    width: 80%;
+    height: 0.5px;
+}
+
+.onclosebutton {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    left: 93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .7s;
+    top: -6.5%;
+    rotate: 180deg;
+}
+
+.svgarrow {
+    transition: .7s;
+    fill: rgb(201, 199, 199);
+}
+
+.onclosebutton:hover {
+    transition: .7s;
+}
+
+.onclosebutton:hover svg {
+    fill: white;
+    transition: .7s;
+}
+
+.Backgroundmain {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    left: 15%;
+    width: 85%;
+}
+
+.topdiv {
+    position: relative;
+    top: 0;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.Minititle {
+    text-align: center;
+    position: relative;
+    left: 34%;
+    top: 10%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.tagsbar {
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height: 10%;
+    position: relative;
+    left: 0%;
+    box-shadow: 2px 1px 3px 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.tagsbar div {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 12%;
+    height: 100%;
+    left: 20%;
+    border-left: solid .25px rgb(188, 188, 188);
+}
+
+.tagsbar div p {
+    position: relative;
+    top: 25%;
+    color: #0f121b;
+    align-items: center;
+}
+
+.olimpiadas {
+    border-top: goldenrod solid 3px;
+}
+
+.esportes {
+    border-top: rgb(0, 200, 255) solid 3px;
+}
+
+.tecnologias {
+    border-top: rgb(12, 12, 175) solid 3px;
+}
+
+.descobertas {
+    border-top: rebeccapurple solid 3px;
+}
+
+.outros {
+    border-top: rgb(99, 99, 99) solid 3px;
+    border-right: solid .25px rgb(188, 188, 188);
+}
+
+.logodojornal {
+    position: relative;
+    left: 34%;
+}
+
+.newsspace {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #d1d1d1;
+    z-index: 1;
+}
+
+.news{
+    background-color: #eaeaea;
+    width: 80%;
+    height: 100%;
+    border-radius: .5%;
+    position: relative;
+    left: 10%;
+    top: 4%;
+}
