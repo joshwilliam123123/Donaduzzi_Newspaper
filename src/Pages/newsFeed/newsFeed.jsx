@@ -1,4 +1,5 @@
 import styles from './newsFeed.module.css'
+import Logocolegio from '../../Imagens/Logocolegio.png'
 
 const NewsFeed = () => {
     return (
@@ -55,7 +56,6 @@ const NewsFeed = () => {
             <section className={styles.Backgroundmain}>
                 <div className={styles.topdiv}>
                     <h2 className={styles.Minititle}>Donaduzzi News</h2>
-                    <img src={Logodojornal} className={styles.logodojornal} />
                 </div>
                 <section className={styles.tagsbar}>
                     <div className={styles.olimpiadas}><p>Olimpiadas</p></div>

@@ -1,4 +1,4 @@
-import styles from './InputField.module.css'
+import styles from '../log/inputField.module.css'
 
 const InputField = ({title, type, placeholder,icon}) => {
     return (

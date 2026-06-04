@@ -267,16 +267,11 @@ svg {
     position: relative;
     top: 0;
     height: 10%;
-    display: flex;
-    flex-direction: row;
     text-align: center;
+    align-items: center;
 }
 
 .Minititle {
-    text-align: center;
-    position: relative;
-    left: 34%;
-    top: 10%;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     color: black;
