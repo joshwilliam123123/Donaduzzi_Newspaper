@@ -269,6 +269,7 @@ svg {
     height: 10%;
     text-align: center;
     align-items: center;
+    display: block;
 }
 
 .Minititle {
