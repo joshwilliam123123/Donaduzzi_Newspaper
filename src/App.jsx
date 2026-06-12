@@ -1,4 +1,5 @@
 import './App.css'
+import "../node_modules/bootstrap/scss/bootstrap";
 //pages
 import UserRegister from './Pages/userRegister/userRegister'
 import UserLogin from './Pages/userLogin/userLogin'
