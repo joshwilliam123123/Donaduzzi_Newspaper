@@ -3,7 +3,7 @@ import Logocolegio from '../../Imagens/Logocolegio.png'
 
 const NewsFeed = () => {
     return (
-        <main>
+        <main className="flex">
         </main>
     )
 }
