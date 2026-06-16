@@ -9,7 +9,6 @@ import NotFound from './Pages/notFound/notFound'
 import NewsFeed from './Pages/newsFeed/newsFeed'
 //components
 import { Routes, Route } from 'react-router-dom'
-import HeaderComp from './Components/header/header'
 import InputField from './Components/log/inputField'
 import Sidebar from './Components/sidebar/sidebar'
 //hooks
@@ -27,7 +26,6 @@ function App() {
   return (
     <main className={"mainpanel maincontainer"}>
       <header>
-        <HeaderComp></HeaderComp>
       </header>
       {showingSidebar && <Sidebar />}
       <Routes>
