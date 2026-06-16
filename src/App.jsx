@@ -3,6 +3,8 @@ import './App.css'
 import UserRegister from './Pages/userRegister/userRegister'
 import UserLogin from './Pages/userLogin/userLogin'
 import UserProfile from './Pages/userProfile/userProfile'
+import UserConfig from './Pages/userConfig/userConfig.jsx'
+
 import NotFound from './Pages/notFound/notFound'
 import NewsFeed from './Pages/newsFeed/newsFeed'
 //components
@@ -36,6 +38,7 @@ function App() {
           Field={InputField} />} />
         <Route path='*' element={<NotFound />} />
         <Route path='/profile' element={<UserProfile />} />
+        <Route path='/config' element={<UserConfig />} />
       </Routes>
     </main>
   )
