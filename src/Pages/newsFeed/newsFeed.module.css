@@ -25,7 +25,7 @@
 }
 
 /* Barra de pesquisa */
-.barraDePesquisa {
+.BarraDePesquisa {
     background-color: #ff0000;
     border: none;
     color: rgb(201, 199, 199);
@@ -34,11 +34,11 @@
     height: 6%;
 }
 
-.barraDePesquisa::placeholder {
+.BarraDePesquisa::placeholder {
     color: rgb(140, 138, 138);
 }
 
-.barraDePesquisa:focus {
+.BarraDePesquisa:focus {
     background-color: #252525;
     color: white;
 }

@@ -14,7 +14,7 @@ const NewsFeed = () => {
                 <div className={`${styles.buttonsSidebar} d-flex flex-column px-3 flex-grow-1`}>
 
                     <input
-                        className={`${styles.barraDePesquisa} form-control mb-3 mt-2`}
+                        className={`${styles.BarraDePesquisa} form-control mb-3 mt-2`}
                         type="text"
                         placeholder="Search"
                     />
