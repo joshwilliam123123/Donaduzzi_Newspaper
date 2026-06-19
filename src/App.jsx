@@ -10,23 +10,16 @@ import NewsFeed from './Pages/newsFeed/newsFeed'
 //components
 import { Routes, Route } from 'react-router-dom'
 import InputField from './Components/log/inputField'
-import Sidebar from './Components/sidebar/sidebar'
 import HeaderComp from './Components/header/header.jsx'
-//hooks
-import { useLocation } from 'react-router-dom';
 
 function App() {
 
-  const location = useLocation()
-  const sidebarLocations = [
-    "/profile",
-    "/login",
-  ]
-  var showingSidebar = sidebarLocations.some((i, _) => i === location.pathname)
-
   return (
+
     <main className="mainpanel maincontainer">
-      {showingSidebar && <Sidebar />}
+      <header>
+        <HeaderComp></HeaderComp>
+      </header>
       <Routes>
         <Route path='/feed' element={<NewsFeed />} />
         <Route path='/register' element={<UserRegister

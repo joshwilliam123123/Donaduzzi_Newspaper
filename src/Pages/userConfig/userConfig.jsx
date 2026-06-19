@@ -2,7 +2,7 @@
 
 const userConfig = () => {
     return (
-        <article className="w-screen h-screen bg-red">
+        <article className="w-screen h-screen">
             <section >
 
             </section>
