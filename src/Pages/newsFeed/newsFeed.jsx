@@ -12,12 +12,12 @@ const NewsFeed = () => {
     const removeTag = (tag) => setTags(prev => prev.filter(item => item !== tag))
 
     const tabsData = [
-        { color: 'blue-900', title: 'Colégio' },
-        { color: 'amber-400', title: 'Olimpiadas' },
-        { color: 'green-600', title: 'Academia' },
-        { color: 'blue-400', title: 'Projetos' },
-        { color: 'amber-600', title: 'Descobertas' }
-    ];
+        { color: '#1E3A8A', title: 'Colégio' },
+        { color: '#FBBF24', title: 'Olimpiadas' },
+        { color: '#16A34A', title: 'Academia' },
+        { color: '#60A5FA', title: 'Projetos' },
+        { color: '#D97706', title: 'Descobertas' }
+    ]
 
     const tagManagers = {
         add: addTag,
@@ -33,8 +33,8 @@ const NewsFeed = () => {
             <nav className='w-[full] flex h-[4em] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center '>
                 <section className='flex flex-row w-[60%] justify-center '>
                     {
-                        tabsData.map((data,i)=>(
-                            <Tab manager={tagManagers} color={data.color} title={data.title} key={i}/>
+                        tabsData.map((data, i) => (
+                            <Tab manager={tagManagers} color={data.color} title={data.title} key={i} />
                         ))
                     }
                 </section>
