@@ -24,10 +24,6 @@ const NewsFeed = () => {
         remove: removeTag
     }
 
-    useEffect(() => {
-        console.log(tags)
-    }, [tags])
-
     return (
         <main className="w-full h-full">
             <nav className='w-[full] flex h-[4em] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center '>
