@@ -7,7 +7,6 @@ const Tab = ({ manager, color, title }) => {
     const Toggle = () => {
         setActive(prev=>{
             const newState = !prev
-            console.log(`--color-${color}`)
             newState ? manager.add(title) : manager.remove(title)
             return newState
         })
