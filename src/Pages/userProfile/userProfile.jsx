@@ -2,7 +2,7 @@
 
 const UserProfile = () => {
     return (
-        <article>
+        <article className="w-screen h-screen">
             <h1>profile</h1>
         </article>
     )
