@@ -1,4 +1,4 @@
-import styles from './userRegister.module.css'
+
 import { useState } from 'react'
 import json from './userRegister.json'
 import emailicon from '/envelope.svg'
@@ -8,15 +8,15 @@ import usernameicon from '/hashtag.svg'
 const UserRegister = ({ Field }) => {
     return (
         <article className={`${styles.contents} mainpanel`}>
-            <img className={styles.blob} src='/backgroundblob.svg' />
-            <div className={styles.innerContent}>
-                <div className={styles.overflowInnercontent}>
-                    <section className={styles.separationSection}>
-                        <h1 className={styles.msg}>{json.maintext}</h1>
-                        <h3 className={styles.textDescription}>{json.desc}</h3>
+            <img src='/backgroundblob.svg' />
+            <div>
+                <div>
+                    <section>
+                        <h1>{json.maintext}</h1>
+                        <h3>{json.desc}</h3>
 
                     </section>
-                    <section className={styles.separationSection}>
+                    <section>
                         <Field
                             title="insira seu email"
                             type="text"
@@ -35,8 +35,8 @@ const UserRegister = ({ Field }) => {
                             placeholder="nome de usuário"
                             icon={usernameicon}
                         />
-                        <section className={styles.signinfooter}>
-                            <button className={styles.signinbutton}>CRIAR MINHA CONTA</button>
+                        <section>
+                            <button>CRIAR MINHA CONTA</button>
                         </section>
                     </section>
                 </div>
