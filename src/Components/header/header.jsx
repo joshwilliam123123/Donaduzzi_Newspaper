@@ -19,8 +19,8 @@ const HeaderComp = () => {
     }
 
     return (
-        <main className='className="flex w-full h-full bg-[#e6e6e6]'>
-            <nav className='flex bg-[#1b2130] h-8 w-full flex-col static'>
+        <section className='className="flex w-full h-22 bg-[#e6e6e6]'>
+            <nav className='flex bg-[#1b2130] h-[36.36%] w-full flex-col static'>
                 <div className='flex w-full h-full items-center flex-row'>
                     <section className=' flex flex-row pl-[2%] gap-[4%] w-full'>
                         <button onClick={() => navigate('/feed')} className={`${location.pathname==routes.feed ? 'bg-blue-500' : ''} transition-all duration-400 rounded text-white flex w-[9%] items-center justify-center cursor-pointer`}>News</button>
@@ -37,7 +37,7 @@ const HeaderComp = () => {
                     </section>
                 </div>
             </nav>
-            <nav className='w-full flex h-14 bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center '>
+            <nav className='w-full flex h-[63.63%] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center '>
                 <section className='flex flex-row w-[60%] justify-center '>
                     <div className='flex items-center w-[20%] border-l border-r border-b-4 border-l-gray-400 border-r-gray-400 border-b-blue-900'><a className='flex w-full justify-center items-center text-center no-underline! text-black'>Colegio</a></div>
                     <div className='flex w-[20%] border-b-4 border-r border-r-gray-400 border-b-amber-400'><a className='flex w-full justify-center items-center text-center no-underline! text-black'>Olimpiadas</a></div>
@@ -46,7 +46,7 @@ const HeaderComp = () => {
                     <div className='flex w-[20%] border-b-4 border-r border-r-gray-400 border-b-amber-600'><a className='flex w-full justify-center items-center text-center no-underline! text-black'>Descobertas</a></div>
                 </section>
             </nav>
-        </main>
+        </section>
 
     )
 }
