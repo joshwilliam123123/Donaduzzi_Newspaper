@@ -43,7 +43,6 @@ const NewsFeed = () => {
                 <div className='flex flex-row w-full h-full mt-50 bg-white'>
                     <section className='w-full h-full'></section>
                     <section className='h-full w-75 flex flex-col border-l bg-amber-200 border-l-gray-500'></section>
-
                 </div>
 
             </section>
