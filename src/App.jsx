@@ -10,7 +10,6 @@ import NewsFeed from './Pages/newsFeed/newsFeed'
 //components
 import { Routes, Route } from 'react-router-dom'
 import InputField from './Components/log/inputField'
-import Sidebar from './Components/sidebar/sidebar'
 import HeaderComp from './Components/header/header.jsx'
 //hooks
 import { useLocation } from 'react-router-dom';
