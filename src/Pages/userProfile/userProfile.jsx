@@ -1,4 +1,4 @@
-import styles from './userProfile.module.css'
+
 
 const UserProfile = () => {
     return (
