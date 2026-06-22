@@ -1,10 +1,14 @@
-
+import Banner from '../../Imagens/Colegioimagemsuperior.jpg'
 
 const UserProfile = () => {
     return (
-        <article className='mainpanel maincontainer'>
-            <h1>profile</h1>
-        </article>
+
+        <main className="w-full h-full border-none border-0">
+            <section className='w-full h-65 bg-black'>
+                <img/>
+            </section>
+        </main>
+
     )
 }
 
