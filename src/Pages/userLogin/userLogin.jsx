@@ -7,7 +7,7 @@ import passwordicon from '/lockclosed.svg'
 
 const UserLogin = ({ Field }) => {
     return (
-        <article className={`${styles.contents} mainpanel`}>
+        <article className={'mainpanel maincontainer'}>
            
         </article>
     )

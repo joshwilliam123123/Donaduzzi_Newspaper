@@ -2,7 +2,7 @@
 
 const userConfig = () => {
     return (
-        <article className="w-screen h-screen">
+        <article className='mainpanel maincontainer'>
             <section >
 
             </section>

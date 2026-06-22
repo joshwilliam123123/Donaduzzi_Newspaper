@@ -7,7 +7,7 @@ import usernameicon from '/hashtag.svg'
 
 const UserRegister = ({ Field }) => {
     return (
-        <article className={`${styles.contents} mainpanel`}>
+        <article className='mainpanel maincontainer'>
            
         </article>
     )

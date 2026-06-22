@@ -23,7 +23,3 @@
   justify-content: center;
   background-color: var(--color-bg);
 }
-@utility stylizedtext {
-  color: var(--color-text-color);
-  font-family: var(--font-display);
-}

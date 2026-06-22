@@ -12,14 +12,29 @@ import NewsFeed from './Pages/newsFeed/newsFeed'
 import { Routes, Route } from 'react-router-dom'
 import InputField from './Components/log/inputField'
 import HeaderComp from './Components/header/header.jsx'
+//hooks
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react'
 
 function App() {
 
-  return (
+  const [headerVisibility,setVisibility] = useState(true)
 
+  const location = useLocation()
+
+  const blacklistedHeaderRoutes = [
+    '/login',
+    '/register',
+  ]
+
+  useEffect(()=>{
+    setVisibility(!blacklistedHeaderRoutes.some(item=>item ==location.pathname ))
+  },[location])
+
+  return (
     <main className="mainpanel maincontainer">
       <header>
-        <HeaderComp></HeaderComp>
+        {headerVisibility && <HeaderComp/>}
       </header>
       <Routes>
         <Route path='/feed' element={<NewsFeed />} />

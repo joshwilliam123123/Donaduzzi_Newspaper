@@ -23,9 +23,9 @@ const HeaderComp = () => {
             <nav className='flex bg-[#1b2130] size-full flex-col static'>
                 <div className='flex w-full h-full items-center flex-row'>
                     <section className=' flex flex-row pl-[2%] gap-[4%] w-full'>
-                        <button onClick={() => navigate('/feed')} className={`${location.pathname==routes.feed ? 'bg-blue-500' : ''} transition-all duration-400 rounded text-white flex w-[9%] items-center justify-center cursor-pointer`}>News</button>
-                        <button onClick={() => navigate('/profile')}  className={`${location.pathname==routes.profile ? 'bg-blue-500' : ''} cursor-pointer transition-all duration-400 rounded text-white flex w-[9%] items-center justify-center`}>Profile</button>
-                        <button onClick={() => navigate('/config')}  className={`${location.pathname==routes.config ? 'bg-blue-500' : ''} cursor-pointer transition-all duration-400 rounded text-white flex w-[9%] items-center justify-center`}>Configs</button>
+                        <button onClick={() => navigate('/feed')} className={`${location.pathname==routes.feed ? 'bg-blue-500' : ''} transition-all duration-400 rounded text-white flex items-center justify-center w-max px-2 cursor-pointer`}>Notícias</button>
+                        <button onClick={() => navigate('/profile')}  className={`${location.pathname==routes.profile ? 'bg-blue-500' : ''} cursor-pointer transition-all duration-400 rounded text-white flex w-max px-2 items-center justify-center`}>Perfil</button>
+                        <button onClick={() => navigate('/config')}  className={`${location.pathname==routes.config ? 'bg-blue-500' : ''} cursor-pointer transition-all duration-400 rounded text-white flex w-max px-2 items-center justify-center`}>Configurações</button>
                     </section>
                     <section className='flex flex-row-reverse pr-[2%] gap-[3%] w-1/2 static fill-white!'>
                         <svg className='fill-white cursor-pointer hover:fill-[#b862ff] transition-all duration-350 ease-in-out' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
