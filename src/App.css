@@ -4,11 +4,11 @@
 @theme {
   --font-display: "Alata", sans-serif;
   --font-sans: var(--font-display);
-  --color-primary: #2a2e83;
+  --color-primary: #1b2130;
   --color-secondary: #ffdd00;
   --color-bg: #e6e6e6;
   --color-text-color: #5f5f79;
-  --color-bg-sec: #c1c1e4;
+  --color-bg-sec: #ffffff;
   --color-input: #0a0a1a;
 }
 
@@ -18,7 +18,6 @@
   height: 100vh;
 }
 @utility maincontainer {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--color-bg);

@@ -20,7 +20,7 @@ const HeaderComp = () => {
 
     return (
         <section className='className="flex w-full h-10'>
-            <nav className='flex bg-[#1b2130] size-full flex-col static'>
+            <nav className='flex bg-primary size-full flex-col static'>
                 <div className='flex w-full h-full items-center flex-row'>
                     <section className=' flex flex-row pl-[2%] gap-[4%] w-full'>
                         <button onClick={() => navigate('/feed')} className={`${location.pathname==routes.feed ? 'bg-blue-500' : ''} transition-all duration-400 rounded text-white flex items-center justify-center w-max px-2 cursor-pointer`}>Notícias</button>
