@@ -1,4 +1,4 @@
-const Input = ({svg,type,id,name,callback}) => {
+const Input = ({svg,type,id,placeholder,callback}) => {
     return (
         <div className="w-full h-[2em] flex flex-row my-2">
             <div className="h-full w-full bg-primary p-2 box-border">
@@ -8,8 +8,8 @@ const Input = ({svg,type,id,name,callback}) => {
                 className="p-2 box-border ] w-[11em] border"
                 type={type}
                 id={id}
-                name={name}
-                placeholder={name}
+                name={id}
+                placeholder={placeholder}
                 onBlur={(e) => callback(e.target.value,id)}
                 required
             />
