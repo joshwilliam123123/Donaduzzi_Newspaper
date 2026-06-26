@@ -1,13 +1,10 @@
 
-import { useState } from 'react'
 import Form from '../../Components/form/form';
-import api from '../../utils/api'
 
-const UserRegister = ({ Field }) => {
+const UserRegister = () => {
     const Confirm = cred => {
         console.log(cred)
     }
-    const Submit 
     return (
         <article className={'mainpanel maincontainer items-center'}>
            <Form 
@@ -35,7 +32,6 @@ const UserRegister = ({ Field }) => {
                 ]}
                 extra={false}
                 confirm={Confirm}
-                submit={}
            />
         </article>
     )
