@@ -1,4 +1,3 @@
-import Banner from '../../Imagens/Colegioimagemsuperior.jpg'
 import { useCookies } from 'react-cookie';
 
 const UserProfile = () => {
