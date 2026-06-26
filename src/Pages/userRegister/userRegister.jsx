@@ -1,6 +1,6 @@
 
-import { useState } from 'react'
 import Form from '../../Components/form/form';
+
 import api from '../../utils/api'
 import { useNavigate } from 'react-router-dom';
 
@@ -58,6 +58,7 @@ const UserRegister = ({ Field }) => {
                 ]}
                 extra={false}
                 confirm={Confirm}
+
                 error={error}
             />
         </article>
