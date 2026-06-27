@@ -1,9 +1,6 @@
 
-import Logocolegio from '../../Imagens/Logocolegio.png'
-import HeaderComp from '../../Components/header/header'
-import Colegio from '../../Imagens/ColegioImagemsuperior.jpg'
 import Tab from '../../Components/header/tab.jsx'
-import { useEffect, useState } from 'react'
+import {useState } from 'react'
 
 const NewsFeed = () => {
     const [tags, setTags] = useState([])
@@ -26,7 +23,7 @@ const NewsFeed = () => {
 
     return (
         <main className='mainpanel maincontainer'>
-            <nav className='w-[full] flex h-[4em] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center '>
+            <nav className='w-full flex h-[10%] min-h-[5%] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center '>
                 <section className='flex flex-row w-[60%] justify-center '>
                     {
                         tabsData.map((data, i) => (
@@ -36,9 +33,9 @@ const NewsFeed = () => {
                 </section>
             </nav>
             <section className=' h-full w-full flex'>
-                <div className='flex flex-row w-full h-full mt-65 bg-white'>
+                <div className='flex flex-row w-full h-full mt-64 bg-white'>
                     <section className='w-full h-full'></section>
-                    <section className='h-full w-75 flex flex-col border-l bg-amber-200 border-l-gray-500'></section>
+                    <section className='h-full w-72 shrink-0 flex flex-col border-l bg-amber-200 border-l-gray-500'></section>
                 </div>
 
             </section>
