@@ -1,4 +1,3 @@
-
 import Form from '../../Components/form/form';
 import { useState } from 'react';
 import api from '../../utils/api'
@@ -15,10 +14,18 @@ const UserRegister = ({ Field }) => {
 
         try {
             const axiosInstance = api();
+            const roleRes = await axiosInstance.get('/perms')
+            let userrole
+
+            (roleRes.data.admin.includes(data.email))? roleRes=="Administrador" : 
+            (roleRes.data.jornalista.includes(data.email))? roleRes=="Jornalista" :
+            roleRes == "Usuário"
+            
             const res = await axiosInstance.post('user/register', {
                 email: data.email,
                 password: data.password,
                 name: data.name,
+                role: userrole
             })
             const jsonres = JSON.stringify(res.data)
             const resError = res.data['error']
