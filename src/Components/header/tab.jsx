@@ -16,7 +16,7 @@ const Tab = ({ manager, color, title }) => {
             style={{
                 '--main-color': color
             }}
-            className={`@container group flex items-center h-full w-[20%] border-l border-r border-b-4 border-l-gray-400 border-r-gray-400 border-b-(--main-color) hover:bg-(--main-color) hover:h-[4em] transition-color duration-200 cursor-pointer`}>
+            className={`@container group flex items-center h-full w-[20%] border-l-[0.5px] border-r-[0.5px] md:border-r md:border-l lg:border-r lg:border-l border-b-4 border-l-gray-400 border-r-gray-400 border-b-(--main-color) hover:bg-(--main-color) hover:h-[4em] transition-color duration-200 cursor-pointer`}>
             <a className='group-hover:text-white text-[min(14cqw,2rem)] transition-colors flex w-full justify-center items-center text-center no-underline! text-black select-none'>{title}
 
             </a>
