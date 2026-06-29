@@ -7,5 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()
-  ]
+  ],
+  server: {
+    host: true,
+    allowedHosts: ['.ngrok-free.dev']
+  }
+  //caso queira rodar no celular me manda msg no discord que eu explico melhor :)
 })
