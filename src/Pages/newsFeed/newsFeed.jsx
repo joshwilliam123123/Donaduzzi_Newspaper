@@ -32,8 +32,10 @@ const NewsFeed = () => {
                     }
                 </section>
             </nav>
-            <section className='flex flex-col'>
-                <div className=''></div>
+            <section className='grid grid-cols-12 justify-center w-full h-full'>
+                <div className=' grid-cols-12 col-start-2 col-end-12 bg-amber-500'>
+                    <h1 className=' text-6xl'>Main news</h1>
+                </div>
             </section>
         </main>
     )
