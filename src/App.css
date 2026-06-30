@@ -6,7 +6,7 @@
   --font-sans: var(--font-display);
   --color-primary: #1b2130;
   --color-secondary: #ffdd00;
-  --color-bg: #e6e6e6;
+  --color-bg: rgb(248, 248, 248);
   --color-text-color: #5f5f79;
   --color-bg-sec: #ffffff;
   --color-input: #0a0a1a;
