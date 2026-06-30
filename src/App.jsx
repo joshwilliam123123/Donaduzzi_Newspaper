@@ -59,7 +59,7 @@ function App() {
   return (
     <main className="mainpanel maincontainer">
       <UserContext value={userInfo}>
-        <header>
+        <header className='fixed w-full top-0 z-20'>
           {headerVisibility && <HeaderComp />}
         </header>
         <Routes>

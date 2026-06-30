@@ -25,8 +25,8 @@ const NewsFeed = () => {
 
     return (
         <main className='flex flex-col w-screen h-screen'>
-            <nav className='z-10 w-full flex h-[5%] md:h-[10%] min-h-[5%] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center'>
-                <section className='flex flex-row w-[60%] justify-center '>
+            <nav className='fixed mt-10 z-10 w-full flex h-[5%] md:h-[10%] min-h-[5%] bg-white shadow-[0px_3px_2px_rgba(128,128,128,1)] justify-center'>
+                <section className='flex flex-row w-[60%] justify-center'>
                     {
                         tabsData.map((data, i) => (
                             <Tab manager={tagManagers} color={data.color} title={data.title} key={i} />
@@ -34,7 +34,7 @@ const NewsFeed = () => {
                     }
                 </section>
             </nav>
-            <section className='grid grid-cols-12 justify-center w-full h-full'>
+            <section className='mt-12 grid grid-cols-12 justify-center w-full h-full'>
                 <div className=' grid grid-cols-12 grid-rows-12 col-start-2 col-end-12 mt-10 max-h-100'>
                     <h1 className='@container col-start-4 col-end-9 row-start-2 md:row-start-3 lg:row-start-2 row-end-3 md:row-end-6 lg:row-end-5 flex text-center justify-center items-center text-3xl md:text-8xl wrap-break-word'>Donaduzzi</h1>
                     <h1 className='@container col-start-8 col-end-10 row-start-2 md:row-start-3 lg:row-start-5 row-end-3 md:row-end-8 lg:row-end-8 flex text-center justify-center items-center text-3xl md:text-8xl wrap-break-word'>News</h1>
@@ -42,7 +42,7 @@ const NewsFeed = () => {
                         <div className='h-100 w-full flex'><img className='w-full border-4 border-white object-cover' src={Biopark}/></div>
                         <div className='h-full w-full flex flex-col'>
                             <img className='h-50 w-full border-4 border-white object-cover object-top' src={Faculdade}/>
-                            <img className='h-50 w-full border-4 border-white object-cover' src={Colegio}/>
+                            <img className='h-50 w-full border-4 border-white object-cover object-center' src={Colegio}/>
                         </div>
                     </section>
                 </div>
