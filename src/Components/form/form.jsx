@@ -6,7 +6,6 @@ const Form = ({ title, inputs, extra , button , confirm , error}) => {
     const [info,setInfo] = useState({})
     const inputConfirm = (val,id) => {
         setInfo(prev=>{
-            console.log(`${val} ${id}`)
             return {...prev,[id]:val}
         })
     }
