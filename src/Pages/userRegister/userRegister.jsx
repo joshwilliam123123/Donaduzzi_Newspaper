@@ -13,15 +13,20 @@ const UserRegister = ({ Field }) => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const axiosInstance = api();
-            const roleRes = await axiosInstance.get('/perms')
+            const roleRes = await api.get('perms')
             let userrole
 
-            (roleRes.data.admin.includes(data.email))? roleRes=="Administrador" : 
-            (roleRes.data.jornalista.includes(data.email))? roleRes=="Jornalista" :
-            roleRes == "Usuário"
-            
-            const res = await axiosInstance.post('user/register', {
+            if (roleRes.data.admin.includes(data.email)) {
+                userrole = "Administrador"
+            } else if (roleRes.data.jornalista.includes(data.email)) {
+                userrole = "Jornalista"
+            } else {
+                userrole = "Usuário"
+            }
+
+            console.log(userrole)
+
+            const res = await api.post('user/register', {
                 email: data.email,
                 password: data.password,
                 name: data.name,
@@ -31,10 +36,11 @@ const UserRegister = ({ Field }) => {
             const resError = res.data['error']
             if (resError) {
                 setError(resError)
-            }else {
+            } else {
                 navigate('/login')
             }
-        } catch {
+        } catch (error) {
+            console.log(error)
             setError("erro ao conectar")
         }
     }

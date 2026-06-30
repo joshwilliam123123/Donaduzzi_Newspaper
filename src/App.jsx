@@ -34,9 +34,8 @@ function App() {
     '/register',
   ]
   const assignUser = async () => {
-    const axiosInstance = api()
 
-    const res = await axiosInstance.get('/user', {
+    const res = await api.get('/user', {
       headers: {
         Authorization: `Bearer ${cookies.token}`
       }
@@ -46,7 +45,12 @@ function App() {
     console.log(res.data)
   }
   useEffect(()=>{
-    assignUser()
+    if (cookies.token) {
+      assignUser()
+    }else {
+      console.log("not logged")
+    }
+    
   },[cookies.token])
   useEffect(() => {
     setVisibility(!blacklistedHeaderRoutes.some(item => item == location.pathname))
