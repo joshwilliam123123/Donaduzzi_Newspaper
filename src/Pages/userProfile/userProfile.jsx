@@ -7,12 +7,14 @@ import { UserContext } from '../../App';
 const UserProfile = () => {
     const navigate = useNavigate();
     const [cookies] = useCookies(['token'])
-    const user = useContext(UserContext)
+    const [userName,setUserName] = useState('')
+    let user 
    
     useEffect(() => {
         if (cookies.token) {
-            
-        } else {
+            user = useContext(UserContext)
+            setUserName(user.name)
+        } else {   
             console.log('not logged in')
             navigate('/login')
         }
@@ -33,7 +35,7 @@ const UserProfile = () => {
                             </svg>
                         </div>
                         <div className='w-full pl-44 mt-3'>
-                            <h1 className='text-[28px]'>{user.name}</h1>
+                            <h1 className='text-[28px]'>{userName}</h1>
                         </div>
                         <div className='w-full flex flex-row-reverse'>
                             <section className='flex flex-col content-center items-center mt-5 mr-8'>

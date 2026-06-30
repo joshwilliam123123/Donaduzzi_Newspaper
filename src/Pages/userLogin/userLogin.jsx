@@ -17,8 +17,7 @@ const UserLogin = ({ Field }) => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const axiosInstance = api();
-            const res = await axiosInstance.post('login', {
+            const res = await api.post('login', {
                 email: data.email,
                 password: data.password,
             })
