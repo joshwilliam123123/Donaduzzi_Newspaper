@@ -1,8 +1,8 @@
-import Colegio from '../../Imagens/Colegioimagemsuperior.jpg'
-import Faculdade from '../../Imagens/Faculdade.jpg'
+import Colegio from '../../Imagens/ColegioImagemsuperior.jpg'
+import Faculdade from '../../Imagens/Faculdade_cropped.jpg'
 import Biopark from '../../Imagens/Biopark.jpg'
 import Tab from '../../Components/header/tab.jsx'
-import {useState } from 'react'
+import { useState } from 'react'
 
 const NewsFeed = () => {
     const [tags, setTags] = useState([])
@@ -35,14 +35,22 @@ const NewsFeed = () => {
                 </section>
             </nav>
             <section className='mt-12 grid grid-cols-12 justify-center w-full h-full'>
-                <div className=' grid grid-cols-12 grid-rows-12 col-start-2 col-end-12 mt-10 max-h-100'>
-                    <h1 className='@container col-start-4 col-end-9 row-start-2 md:row-start-3 lg:row-start-2 row-end-3 md:row-end-6 lg:row-end-5 flex text-center justify-center items-center text-3xl md:text-8xl wrap-break-word'>Donaduzzi</h1>
+                <div className=' grid grid-cols-12 grid-rows-12 col-start-2 col-end-12 mt-10 h-100'>
+                    <h1 className='@container col-start-3 col-end-9 row-start-2 md:row-start-3 lg:row-start-2 row-end-3 md:row-end-6 lg:row-end-5 flex text-center justify-center items-center text-3xl md:text-8xl wrap-break-word'>Donaduzzi</h1>
                     <h1 className='@container col-start-8 col-end-10 row-start-2 md:row-start-3 lg:row-start-5 row-end-3 md:row-end-8 lg:row-end-8 flex text-center justify-center items-center text-3xl md:text-8xl wrap-break-word'>News</h1>
-                    <section className='flex flex-row col-start-2 col-end-12 h-100 row-start-10'>
-                        <div className='h-100 w-full flex'><img className='w-full border-4 border-white object-cover' src={Biopark}/></div>
-                        <div className='h-full w-full flex flex-col'>
-                            <img className='h-50 w-full border-4 border-white object-cover object-top' src={Faculdade}/>
-                            <img className='h-50 w-full border-4 border-white object-cover object-center' src={Colegio}/>
+                    <section className='flex flex-row gap-x-2 col-start-2 col-end-12 row-start-10'>
+                        <div className='h-100 w-full flex shadow-[0px_3px_2px_rgba(128,128,128,1)] rounded-[7px]'>
+                            <img className='w-full object-cover shadow-[0px_10px_10px_rgba(128,128,128,1)] rounded-[7px]' src={Biopark} />
+                        </div>
+                        <div className='h-full w-full flex flex-col gap-y-2'>
+                            <div className='h-49 shadow-[2px_3px_10px_rgba(128,128,128,1)] rounded-tr-none rounded-[7px] flex flex-row'>
+                                <img className='h-full w-50 object-cover object-top rounded-bl-[7px] rounded-tl-[7px]' src={Faculdade} />
+                                <p></p>
+                            </div>
+                            <div className='h-49 shadow-[2px_3px_10px_rgba(128,128,128,1)] rounded-[7px] rounded-tr-none flex flex-row'>
+                                <img className='h-full w-50 object-cover object-center rounded-bl-[7px] rounded-tl-[7px]' src={Colegio} />
+                                <p></p>
+                            </div>
                         </div>
                     </section>
                 </div>
